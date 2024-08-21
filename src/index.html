@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/src/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Element</title>
+  </head>
+
+  <body class="root">
+    <div class="root__layout">
+      <!-- header -->
+      <header class="header">
+        <div class="wrapper header__wrapper">
+          <div class="header__logo">
+            <a href="" class="logo">
+                          <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_283)">
+                <circle cx="16" cy="24" r="16" fill="#316099" />
+                <circle
+                  cx="32"
+                  cy="24"
+                  r="15"
+                  fill="white"
+                  stroke="#316099"
+                  stroke-width="2"
+                />
+                <path
+                  d="M39.3 30L34.38 16H30.96L26.06 30H29.04L29.88 27.48H35.46L36.3 30H39.3ZM32.68 19.18L34.6 24.9H30.76L32.68 19.18Z"
+                  fill="#316099"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_283">
+                  <rect
+                    width="48"
+                    height="48"
+                    fill="white"
+                    transform="matrix(1 0 0 -1 0 48)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            </a>
+          </div>
+
+          <div class="header__menu">
+            <button class="header__button burger">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 24H28V21.3333H4V24ZM4 17.3333H28V14.6667H4V17.3333ZM4 8V10.6667H28V8H4Z"
+                  fill="#356EAD"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- ham-menu -->
+          <div class="off-screen-menu">
+                <svg class="off-screen-menu__close" width="80px" height="80px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 21.32L21 3.32001" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 3.32001L21 21.32" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            <ul>
+              <li><a href="/">About</a></li>
+              <li><a href="/">Services</a></li>
+              <li><a href="/">Projects</a></li>
+              <li><a href="/">Blog</a></li>
+              <li><a href="/">Contact</a></li>
+            </ul>
+          </div>
+ 
+        </div>
+      </header>
+      <!-- main -->
+      <main class="content">
+
+        <!-- description -->
+        <section class="section__desc">
+          <div class="wrapper">
+            <div class="container section__desc-wrapper">
+              <h1 class="section__desc-title title">
+                New Automation <br />
+                Tool for Your Home
+              </h1>
+
+              <p class="section__desc-paragraph paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Faucibus tristique vulputate ultrices ut mauris tellus at.
+                Posuere sollicitudin odio tellus elit.
+              </p>
+
+              <button class="section__desc-button button">
+                See Out Project
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- gallery -->
+        <section class="section__gallery">
+          <div class="wrapper">
+            <div class="container section__gallery-wrapper p-130">
+              <!-- left -->
+              <div class="section__gallery-left">
+                              <h2 class="section__gallery-title">
+                What we do to help our client grow in digital era,
+              </h2>
+                              <!-- first-card -->
+              <article class="section__gallery-card">
+                <img
+                  class="section__gallery-card-img"
+                  src="<%=require('/src/images/gallery/1.png')%>"
+                  alt=""
+                />
+                <h3 class="section__gallery-card-title">
+                  Make Your business To Be Better Famous In Internet
+                </h3>
+
+                <p class="section__gallery-card-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+
+                <button class="section__gallery-card-button">
+                  Learn more
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z"
+                      fill="#5A98D0"
+                    />
+                  </svg>
+                </button>
+              </article>
+              </div>
+              <!-- right -->
+              <div class="section__gallery-right">
+                              <!-- second-card -->
+              <article class="section__gallery-card">
+                <img
+                  class="section__gallery-card-img section__gallery-card-img-absolute"
+                  src="<%=require('/src/images/gallery/3.png')%>"
+                  alt=""
+                />
+                <h3 class="section__gallery-card-title">
+                  Bring Technology To Your 
+Comfrotable Home
+                </h3>
+
+                <p class="section__gallery-card-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+
+                <button class="section__gallery-card-button">
+                  Learn more
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z"
+                      fill="#5A98D0"
+                    />
+                  </svg>
+                </button>
+              </article>
+              
+              <!-- last-card -->
+              <article class="section__gallery-card">
+                <img
+                  class="section__gallery-card-img"
+                  src="<%=require('/src/images/gallery/2.png')%>"
+                  alt=""
+                />
+                <h3 class="section__gallery-card-title">
+                  Build Your Digital Product
+                    That Suitable For Your Need
+                </h3>
+
+                <p class="section__gallery-card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+
+                <button class="section__gallery-card-button">
+                  Learn more
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z"
+                      fill="#5A98D0"
+                    />
+                  </svg>
+                </button>
+              </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- clients -->
+        <section class="section__clients">
+          <div class="wrapper">
+            <div class="container section__clients-wrapper">
+
+              <!-- clients-description -->
+              <div class="section__clients-description">
+                <h2 class="section__clients-description-title">Our Beloved Client</h2>
+                <p class="section__clients-description-paragraph">Lorem ipsum dolor sit amet, 
+                  consectetur adipisicing elit, sed do <br> eiusmod tempor incididunt 
+                  ut labore et dolore magna aliqua. Ut <br> enim ad minim veniam.</p>
+              </div>
+
+              <!-- clients-grid -->
+              <div class="section__clients-grid">
+                <a href="/" class="section__clients-grid-client">logo client 1</a>
+                <a href="/" class="section__clients-grid-client">logo client 2</a>
+                <a href="/" class="section__clients-grid-client">logo client 3</a>
+                <a href="/" class="section__clients-grid-client">logo client 4</a>
+                <a href="/" class="section__clients-grid-client">logo client 5</a>
+                <a href="/" class="section__clients-grid-client">logo client 6</a>
+                <a href="/" class="section__clients-grid-client">logo client 7</a>
+                <a href="/" class="section__clients-grid-client active">More client</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- form -->
+        <section class="section__form">
+          <div class="wrapper">
+            <div class="container section__form-wrapper">
+
+              <!-- form-description -->
+              <div class="section__form-description">
+                <h2 class="section__form-description-title">Intersted to woek <br> with our team?</h2>
+                <p class="section__form-description-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+
+              <button class="section__form-button button" id="open-form">Let's Talk</button>
+
+              <div class="off-screen-form-overlay" id="modal-overlay">
+
+               <!-- Модальное окно с формой -->
+              <div class="off-screen-form">
+                  <form class="form" id="contact-form" novalidate>
+                      <h1 class="form__title">Send Us a Message</h1>
+                      <svg class="close-svg form__close" width="48px" height="48px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 21.32L21 3.32001" stroke="#1f3f68" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 3.32001L21 21.32" stroke="#1f3f68" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <div class="form__group">
+                          <label class="form__label" for="full-name">Full Name</label>
+                          <input type="text" id="full-name" minlength="3" class="form__input" name="full-name" placeholder="Your Name" required>
+                          <div class="error-message" id="name-error" style="display: none;">Пожалуйста введите полное имя.</div>
+                      </div>
+                    
+                      <div class="form__group">
+                          <label class="form__label" for="email">Email</label>
+                          <input type="email" id="email" class="form__input" name="email" placeholder="Your Email" required>
+                          <div class="error-message" id="email-error" style="display: none;">Введите пожалуйста валидный почтовый ящик с "@" символом.</div>
+                      </div>
+                    
+                      <div class="form__group">
+                          <label class="form__label" for="message">Message</label>
+                          <textarea id="message" class="form__textarea" name="message" placeholder="Your message"></textarea>
+                      </div>
+                    
+                      <div class="form__group">
+                          <button type="submit" class="form__button">Submit</button>
+                      </div>
+                  </form>
+              </div>
+            </div>
+
+                          <!-- Модальное окно с успешным сообщением -->
+              <div class="success-overlay" id="success-overlay" style="display: none;">
+                  <div class="success-message">
+
+                      <p class="success-message__text">Your message successfully sent
+                                                <svg class="close-svg form__close" width="48px" height="48px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 21.32L21 3.32001" stroke="#1f3f68" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 3.32001L21 21.32" stroke="#1f3f68" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+                      </p>
+                  </div>
+              </div>
+
+          </div>
+        </section>
+
+
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="wrapper">
+
+        <div class="container footer-wrapper">
+
+          <div class="footer-contacts-wrapper">
+            
+          <!-- contacts -->
+          <div class="footer__contacts">
+            <a href="" class="footer__contacts-logo">
+              <svg class="footer__contacts-logo-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_524)">
+<circle cx="16" cy="24" r="16" fill="#98C3E8"/>
+<circle cx="32" cy="24" r="15" fill="white" stroke="#316099" stroke-width="2"/>
+<path d="M38.3 31L33.38 17H29.96L25.06 31H28.04L28.88 28.48H34.46L35.3 31H38.3ZM31.68 20.18L33.6 25.9H29.76L31.68 20.18Z" fill="#316099"/>
+</g>
+<defs>
+<clipPath id="clip0_1_524">
+<rect width="48" height="48" fill="white" transform="matrix(1 0 0 -1 0 48)"/>
+</clipPath>
+</defs>
+              </svg>
+              Afrianska
+            </a>
+
+            <ul class="footer__contacts-list">
+
+              <li class="footer__contacts-list-item">
+                <span>A.</span>
+                <span>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.</span>
+              </li>
+
+              <li class="footer__contacts-list-item">
+                <span>T.</span>
+                <a href="tel:+6281273134321">+62-812-7313-4321</a>
+              </li>
+
+              <li class="footer__contacts-list-item">
+                <span>E.</span>
+                <a href="mailto:hello.afrian@gmail.com">hello.afrian@gmail.com</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- about -->
+          <div class="footer__about">
+            <h2 class="footer__about-title">
+            About US
+          </h2>
+
+            <ul class="footer__about-list">
+              <li class="footer__about-list-item">
+                <a href="" class="footer__about-list-item-link">About</a>
+              </li>
+              <li class="footer__about-list-item">
+                <a href="" class="footer__about-list-item-link">What We Do</a>
+              </li>
+              <li class="footer__about-list-item">
+                <a href="" class="footer__about-list-item-link">Project</a>
+              </li>
+              <li class="footer__about-list-item">
+                <a href="" class="footer__about-list-item-link">How It Work With Us</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- follows -->
+          <div class="footer__follows">
+            <h2 class="footer__follows-title">Follows US</h2>
+
+            <ul class="footer__follows-list">
+              <li class="footer__follows-list-item">
+                <a href="" class="footer__follows-list-item-link">Instagram</a>
+              </li>
+              <li class="footer__follows-list-item">
+                <a href="" class="footer__follows-list-item-link">Facebook</a>
+              </li>
+              <li class="footer__follows-list-item">
+                <a href="" class="footer__follows-list-item-link">Linkedin</a>
+              </li>
+              <li class="footer__follows-list-item">
+                <a href="" class="footer__follows-list-item-link">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+   
+            <span class="footer-credits">
+              2019 © Afrianska. All rights reserved.
+            </span>
+
+          </div>
+
+        </div>
+
+        
+      </footer>
+
+      <!-- templates -->
+              <template class="section__gallery-card">
+                <img
+                  class="section__gallery-card-img"
+                  src="<%=require('/src/images/gallery/1.png')%>"
+                  alt=""
+                />
+                <h3 class="section__gallery-card-title">
+                  Make Your business To Be Better Famous In Internet
+                </h3>
+
+                <p class="section__gallery-card-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </template>
+  </body>
+</html>

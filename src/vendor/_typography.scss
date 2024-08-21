@@ -1,0 +1,143 @@
+@import "./variables";
+@import "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote,
+pre,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Gilroy", sans-serif;
+}
+
+h1 {
+  font-family: "Galien", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 116%;
+  letter-spacing: 0.04em;
+  color: $blue_01;
+
+  @media (max-width: 1200px) {
+    font-size: 3.5rem;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 4.5rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 3.5rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 2.75rem;
+  }
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  line-height: 128%;
+  letter-spacing: 0.05em;
+  color: $blue_03;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: $blue_03;
+}
+
+p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 185%;
+  letter-spacing: 0.05em;
+  color: $blue_03;
+}
+
+a {
+  color: black;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  @include transition;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  s &.active {
+    color: black;
+  }
+}
+
+body p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 99;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.p-130 {
+  padding: 0 130px;
+}

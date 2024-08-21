@@ -1,0 +1,77 @@
+@import "./variables";
+
+@mixin transition {
+  transition: 0.2s ease-in-out;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-beetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin text-uppercase {
+  text-transform: uppercase;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+@mixin button {
+  @include flex-column-center;
+  padding: 15px 0;
+  font-family: "Gilroy", sans-serif;
+  color: $white;
+  background-color: $blue_02;
+  font-size: 1rem;
+  line-height: 162%;
+  letter-spacing: 0.04em;
+  max-width: 220px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 5px 10px 20px 0 $box-shadow;
+  @include transition;
+
+  &:hover {
+    background-color: $hover-button;
+  }
+}
+
+@mixin paragraph {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.05em;
+}
+
+@mixin footer-title {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem; // 28px
+  line-height: 164%;
+  letter-spacing: 0.02em;
+  color: $white;
+  margin-bottom: 32px;
+}

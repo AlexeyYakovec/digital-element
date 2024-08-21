@@ -1,0 +1,50 @@
+@import "../../vendor/variables";
+@import "../../vendor/mixins";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.root {
+  font-family: "Gilroy", sans-serif;
+  height: 100vh;
+  background-color: $white;
+  width: 100%;
+
+  @media (max-width: $desktop) {
+    font-size: 16px;
+  }
+
+  &__layout {
+    @include flex-column;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  padding: 0 130px;
+
+  @media (max-width: 768px) {
+    padding: 0 80px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 0 5rem;
+  }
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}

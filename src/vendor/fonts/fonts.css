@@ -1,0 +1,80 @@
+/* @font-face {
+  font-family: "Druk Wide Cyrillic";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./Druk/DrukWideCyr-Bold.woff") format("woff"),
+    url("./Druk/DrukWideCyr-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Druk Wide Cyrillic";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./Druk/DrukWideCyr-Bold.woff") format("woff"),
+    url("./Druk/DrukWideCyr-Bold.woff2") format("woff2");
+} */
+
+@font-face {
+  font-family: "Galien";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./Galien/Galien-Bold.woff") format("woff"),
+    url("./Galien/Galien-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-UltraLight";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("./Gilroy/gilroy-ultralight.woff") format("woff"),
+    url("./Gilroy/gilroy-ultralight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./Gilroy/gilroy-Light.woff") format("woff"),
+    url("./Gilroy/gilroy-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./Gilroy/gilroy-regular.woff") format("woff"),
+    url("./Gilroy/gilroy-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./Gilroy/gilroy-medium.woff") format("woff"),
+    url("./Gilroy/gilroy-medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./Gilroy/gilroy-semibold.woff") format("woff"),
+    url("./Gilroy/gilroy-semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./Gilroy/gilroy-ExtraBold.woff") format("woff"),
+    url("./Gilroy/gilroy-ExtraBold.woff2") format("woff2");
+}

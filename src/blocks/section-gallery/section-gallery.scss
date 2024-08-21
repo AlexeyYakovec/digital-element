@@ -1,0 +1,121 @@
+@import "/src/vendor/typography";
+@import "/src/vendor/mixins";
+@import "/src/vendor/animations";
+
+.section__gallery {
+  margin-top: 190px;
+  position: relative;
+  margin-bottom: 212px;
+
+  &-left {
+    position: relative;
+
+    .section__gallery-card {
+      margin-left: 80px;
+      margin-top: 170px;
+    }
+  }
+  &-right {
+    @include flex-column;
+    gap: 100px;
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &-title {
+    max-width: 360px;
+    align-self: flex-end;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    padding: 0 3rem;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    background: $white;
+    position: relative;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+      box-shadow: $box-shadow-hover;
+    }
+
+    &-img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      align-self: center;
+      margin-bottom: 52px;
+      position: absolute;
+      top: 40px;
+      right: calc(50% - 66px);
+    }
+
+    &-img-absolute {
+      top: -20px;
+      right: calc(50% - 134px);
+    }
+
+    &-title {
+      margin-bottom: 1rem;
+      margin-top: 225px;
+    }
+    &-paragraph {
+      margin-bottom: 32px;
+      opacity: 0.6;
+    }
+    &-button {
+      display: flex;
+      align-items: center;
+      font-size: 0.875rem;
+      font-weight: 600;
+      line-height: 214%;
+      letter-spacing: 0.05em;
+      color: $blue_02;
+      margin-bottom: 3rem;
+
+      & svg {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .section__gallery {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__gallery {
+    margin: 80px 0;
+  }
+  .section__gallery-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__gallery-left {
+    .section__gallery-card {
+      margin-left: 0px;
+      margin-top: 80px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .section__gallery-right {
+    gap: 30px;
+  }
+}

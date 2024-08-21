@@ -1,0 +1,17 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+@import url(../vendor/_variables.scss);
+@import url(../vendor/_typography.scss);
+@import url(../vendor/_mixins.scss);
+@import url(../blocks/root/root.scss);
+@import url(../vendor/_global.scss);
+@import url(../vendor/_animations.scss);
+
+// header
+
+@import url(../blocks/header/header.scss);
+@import url(../blocks/section-desc/section-desc.scss);
+@import url(../blocks/section-gallery/section-gallery.scss);
+@import url(../blocks/section-clients/section-clients.scss);
+@import url(../blocks/section-form/section-form.scss);
+@import url(../blocks/footer/footer.scss);

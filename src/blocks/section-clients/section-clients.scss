@@ -1,0 +1,134 @@
+@import "/src/vendor/typography";
+@import "/src/vendor/mixins";
+@import "/src/vendor/animations";
+
+.section__clients {
+  background-color: $blue_02;
+  border-top-left-radius: 200px;
+  padding-top: 96px;
+  padding-bottom: 125px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    animation: appear 1.5s linear;
+
+    .section__clients-description {
+      display: flex;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-title {
+        max-width: 34%;
+        color: $white;
+        @media (max-width: 992px) {
+          max-width: 38%;
+        }
+        @media (max-width: 768px) {
+          max-width: 100%;
+          white-space: nowrap;
+          margin-bottom: 12px;
+        }
+        @media (max-width: 438px) {
+          white-space: unset;
+        }
+      }
+      &-paragraph {
+        color: $white;
+        @include paragraph;
+        opacity: 0.6;
+        @media (max-width: 992px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .section__clients-grid {
+      margin-top: 110px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      @media (max-width: 768px) {
+        margin-top: 60px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &-client {
+        text-align: center;
+        padding: 42px 0;
+        background-color: transparent;
+        text-decoration: none;
+        color: $white_01;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 230%;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+        border-left: 1px solid $white-opacity;
+        text-transform: uppercase;
+        @include transition;
+
+        @media (max-width: 768px) {
+          border-bottom: 1px solid $white-opacity !important;
+        }
+
+        &:hover {
+          background-color: $blue_01;
+        }
+
+        &.active {
+          background-color: $blue_01;
+          text-transform: capitalize;
+        }
+      }
+
+      &-client:nth-child(1),
+      &-client:nth-child(2),
+      &-client:nth-child(3),
+      &-client:nth-child(4) {
+        border-bottom: 1px solid $white-opacity;
+      }
+
+      &-client:nth-child(1),
+      &-client:nth-child(5) {
+        border-left: none;
+      }
+
+      &-client:nth-child(3),
+      &-client:nth-child(7) {
+        @media (max-width: 768px) {
+          border-left: none;
+        }
+      }
+
+      &-client:nth-child(7),
+      &-client:nth-child(8) {
+        @media (max-width: 768px) {
+          border-bottom: none !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 400px) {
+}
