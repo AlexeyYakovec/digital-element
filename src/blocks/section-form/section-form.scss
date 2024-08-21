@@ -102,8 +102,28 @@
       width: 100%;
     }
 
+    @media (max-width: 1024px) {
+      top: 32%;
+    }
+
+    @media (max-width: 820px) {
+      top: 38%;
+    }
+
+    @media (max-width: 768px) {
+      top: 44%;
+    }
+
     @media (max-width: 576px) {
       width: 86%;
+    }
+
+    @media (max-width: 412px) {
+      top: 50%;
+    }
+
+    @media (max-width: 375px) {
+      width: 81%;
     }
   }
 
@@ -114,10 +134,22 @@
     gap: 32px;
     position: relative;
 
+    @media (max-width: 375px) {
+      padding: 24px;
+      gap: 18px;
+    }
+
     & .form__close {
       position: absolute;
       right: 10%;
       top: 6%;
+
+      @media (max-width: 375px) {
+        right: 5%;
+        top: 3%;
+        width: 36px;
+        height: 36px;
+      }
     }
 
     &__group {
@@ -141,6 +173,10 @@
     color: $blue_01;
     text-transform: uppercase;
     margin-bottom: 48px;
+    @media (max-width: 375px) {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
   }
 
   .form__label {

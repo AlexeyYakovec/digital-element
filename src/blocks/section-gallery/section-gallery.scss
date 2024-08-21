@@ -24,6 +24,12 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    article {
+      @media (max-width: 490px) {
+        width: 225px;
+      }
+    }
   }
 
   &-title {
